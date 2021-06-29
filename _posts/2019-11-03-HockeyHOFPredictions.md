@@ -12,7 +12,7 @@ header:
   teaser: "/assets/HOFBackground.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/xanderhieken/HockeyHOFPredictions"
+      url: "https://github.com/Satishhieken/HockeyHOFPredictions"
 ---
 
 # Exploratory Data Analysis and Predictive Modeling for the Hockey Hall of Fame
@@ -29,7 +29,7 @@ I start this project by importing the data and creating histograms, bar charts, 
 
 In order to better compare the distribution of each feature for Hall-of-Famers vs Non Hall-of-Famers, I generated a parallel coordinates plot that shows pretty significant stratification:
 
-![Parallel Coordinates](https://xanderhieken.github.io/assets/ParallelCoord.png)
+![Parallel Coordinates](https://Satishhieken.github.io/assets/ParallelCoord.png)
 
 This let me know that Hall-of-Famers are actually (mostly) statistically different from their peers, which means I should be able to make some fairly accurate predictions using this data.
 
@@ -41,7 +41,7 @@ After checking distributions and correlations of the data, I reduced the dataset
 >
 >Players that are already in the Hall of Fame appear much darker in color
 
-![Scatterplots](https://xanderhieken.github.io/assets/HHOFScatterplots.jpg)
+![Scatterplots](https://Satishhieken.github.io/assets/HHOFScatterplots.jpg)
 
 At this point, I knew that I would be using logistic regression to make binary predictions, so I split the data into training and testing sets.
 
@@ -64,11 +64,11 @@ As it turns out, there is a reason those players made it into the Hall of Fame- 
 
 Aside from three false negative predictions, the other 150 records in the test data were correctly classified:
 
-![Classification Report](https://xanderhieken.github.io/assets/HHOFCR.png)
+![Classification Report](https://Satishhieken.github.io/assets/HHOFCR.png)
 
 Since the overwhelming majority of the data is for players that aren't currently in the Hall of Fame, and I would prefer a balance of precision and recall, **F1** is going to be the best metric to use. 
 
 At the end of the day, there really aren't that many players that have ever made it into the Hockey Hall of Fame. After exploring the data, it's a lot more obvious that the players who are in the Hall of Fame usually make a very strong case for themselves by continuing to play at a high level for many years. The minimum of 500 career games that I used for this project is the equivalent of playing just over six full NHL seasons without missing a single game, and it's even more common to see a Hall-of-Famer play over 1,000 games before hanging up their skates!
 
 ## Author
-**Xander Hieken**
+**Satish Hieken**

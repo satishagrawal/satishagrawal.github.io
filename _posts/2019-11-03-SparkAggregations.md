@@ -12,7 +12,7 @@ header:
   teaser: "/assets/SparkAggBackground.png"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/xanderhieken/SparkAggregations"
+      url: "https://github.com/Satishhieken/SparkAggregations"
 ---
 
 # Joining Datasets and Performing Aggregations with Spark
@@ -98,8 +98,8 @@ There are two data files that are used in this notebook (`flights.parquet` and `
 	* origin_airport_latitude 
 		* Then, print the schema
 
-### Rather than providing all of the schema printouts here, they can all be found in the [notebook](https://github.com/xanderhieken/SparkAggregations/blob/master/Spark%20Aggregations.ipynb) located in the GitHub repository for this project.
+### Rather than providing all of the schema printouts here, they can all be found in the [notebook](https://github.com/Satishhieken/SparkAggregations/blob/master/Spark%20Aggregations.ipynb) located in the GitHub repository for this project.
 
 ## Author
-**Xander Hieken**
+**Satish Hieken**
 

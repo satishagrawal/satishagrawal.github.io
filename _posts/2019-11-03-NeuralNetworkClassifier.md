@@ -16,7 +16,7 @@ header:
   teaser: "/assets/NeuralBackground.png"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/xanderhieken/NeuralNetworkClassifier"
+      url: "https://github.com/Satishhieken/NeuralNetworkClassifier"
 ---
 # Building Neural Network Classifiers for Text and Images
 
@@ -63,7 +63,7 @@ from keras.datasets import mnist
 5. Report the model's accuracy and loss
 
 ## Results
-Below, you can find the accuracy for each model, but you can find the remainder of the evaluation metrics in the Jupyter Notebook located in this project's [GitHub repository](https://github.com/xanderhieken/NeuralNetworkClassifier). 
+Below, you can find the accuracy for each model, but you can find the remainder of the evaluation metrics in the Jupyter Notebook located in this project's [GitHub repository](https://github.com/Satishhieken/NeuralNetworkClassifier). 
 
 #### Text Classification
 Scikit-learn Accuracy: 0.61725
@@ -74,4 +74,4 @@ Keras Accuracy: 0.64225
 Keras Accuracy: 0.9855999946594238
 
 ## Author
-**Xander Hieken**
+**Satish Hieken**

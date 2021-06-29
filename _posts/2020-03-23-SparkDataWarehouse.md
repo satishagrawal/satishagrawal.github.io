@@ -15,7 +15,7 @@ header:
   teaser: "/assets/DataWarehouseBackground.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/xanderhieken/SparkDataWarehouse"
+      url: "https://github.com/Satishhieken/SparkDataWarehouse"
 ---
 # Creating a Data Warehouse in Spark
 
@@ -91,7 +91,7 @@ After running the code, the data warehouse will contain a bunch of folders full 
 
 ## Author
 
-**Xander Hieken**
+**Satish Hieken**
 
 
 ## Acknowledgments

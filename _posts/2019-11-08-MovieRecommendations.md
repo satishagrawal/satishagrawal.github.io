@@ -17,7 +17,7 @@ header:
   teaser: "/assets/MovieRecommendationsBackground.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/xanderhieken/MovieRecommendations"
+      url: "https://github.com/Satishhieken/MovieRecommendations"
 ---
 
 # Building a Movie Recommendation Engine in Spark
@@ -70,11 +70,11 @@ Since all the ratings range from 0.5 to 5.0, an RMSE of ~0.88 shows very little 
 
 Even though the predicted ratings might not be the most accurate, let's take a look at the top ten predictions for user 133 to see the output:
 
-![Movie Recommendations](https://xanderhieken.github.io/assets/MovieRecs.png)
+![Movie Recommendations](https://Satishhieken.github.io/assets/MovieRecs.png)
 
 
 ## Author
-**Xander Hieken**
+**Satish Hieken**
 
 ## Acknowledgements
 **[MovieLens](https://grouplens.org/datasets/movielens/) Data from GroupLens Research**
