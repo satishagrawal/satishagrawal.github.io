@@ -15,9 +15,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Satish Agrawal's Data Science Portfolio"
+title                    : "Satish Agrawal"
 title_separator          : "-"
-subtitle                 : "Portfolio Home"
+subtitle                 : "Home"
 name                     : "Satish Agrawal"
 description              : "A Great Big Beautiful Tomorrow"
 url                      : "https://SatishAgrawal.github.io/"
@@ -95,28 +95,28 @@ author:
   name             : "Satish Agrawal"
   avatar           : "assets/AvatarPicture.jpeg"
   bio              : "Data Scientist"
-  location         : "Orlando, Florida"
-  email            : "SatishAgrawal@gmail.com"
+  location         : "Omaha, Nebraska"
+  email            : "satish.agrawal82@gmail.com"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/in/SatishAgrawal/
+      url: https://www.linkedin.com/in/satishagrawal/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/SatishAgrawal"
+      url: "https://github.com/satishagrawal"
 
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/in/SatishAgrawal/
+      url: https://www.linkedin.com/in/satishagrawal/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/SatishAgrawal"
+      url: "https://github.com/satishagrawal"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:SatishAgrawal@gmail.com
+      url: mailto:satish.agrawal82@gmail.com
 
 
 
