@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# xanderhieken.github.io
+Project Portfolio on GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/satishagrawal/satishagrawal.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Below are the most common files and folders that need to be adjusted to customize the website
+**_posts** contains the .md files for each project
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**_pages** contains the .md files for each page on the website
 
-### Markdown
+**assets** contains all image files being used on the website
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**_config.yml** is where you adjust the configuration of the website
 
-```markdown
-Syntax highlighted code block
+**index.html** is where you adjust the configuration of the home page
 
-# Header 1
-## Header 2
-### Header 3
+**_data/navigation.yml** is where you add the pages you want to be linked to your home page
 
-- Bulleted
-- List
+**_sass/minimal-mistakes/skins/** is where you adjust default settings for specific themes
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/satishagrawal/satishagrawal.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**_sass/minimal-mistakes/_variables.scss** is where you adjust default settings for the whole website

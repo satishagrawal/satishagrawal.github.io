@@ -1,0 +1,9 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Work"
+    url: /work/
+  - title: "Contact"
+    url: /contact/
+  - title: "Resume"
+    url: /assets/Resume.pdf
