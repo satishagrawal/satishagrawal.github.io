@@ -1,4 +1,4 @@
-# Satishhieken.github.io
+# SatishAgrawal.github.io
 Project Portfolio on GitHub Pages
 
 ### Below are the most common files and folders that need to be adjusted to customize the website

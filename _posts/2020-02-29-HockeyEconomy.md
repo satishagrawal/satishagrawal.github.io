@@ -12,7 +12,7 @@ header:
   teaser: "/assets/HockeyEconomyBackground.png"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/Satishhieken/HockeyEconomy"
+      url: "https://github.com/SatishAgrawal/HockeyEconomy"
 ---
 
 # Predictive Analytics for NHL Contracts
@@ -56,7 +56,7 @@ In the data folder of the GitHub repository, you will find four CSV files:
 **Analysis**
 * The neural network was built with Keras and uses all of the features in the dataset:
 
-![Neural Network](https://Satishhieken.github.io/assets/NeuralNetwork.png)
+![Neural Network](https://SatishAgrawal.github.io/assets/NeuralNetwork.png)
 
 >Next, I had to test the correlation of all the features to figure out which one(s) have the highest correlation with the target (Percentage of Cap Space), so I could use those features for regression.
 
@@ -76,10 +76,10 @@ Neural Network = 0.019025536688456527
 Simple Linear Regression = 0.023563290128380265
 ```
 
-![NN Predicted vs Actual](https://Satishhieken.github.io/assets/NNPlot.png)
+![NN Predicted vs Actual](https://SatishAgrawal.github.io/assets/NNPlot.png)
 
 ## Author
-**Satish Hieken**
+**Satish Agrawal**
 
 ## Acknowledgements
 The hockey analytics Twitter community is extremely helpful and supportive of anyone looking to learn more about hockey, statistics, or sports analytics in-general.

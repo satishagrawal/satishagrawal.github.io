@@ -10,7 +10,7 @@ header:
 ---
 
 ## Thanks for checking out my portfolio!
->If you were looking for a more formal list of skills and work experience, you can find all that information on my [resume](https://Satishhieken.github.io/assets/Resume.pdf) or [LinkedIn profile](https://www.linkedin.com/in/Satishhieken/).
+>If you were looking for a more formal list of skills and work experience, you can find all that information on my [resume](https://SatishAgrawal.github.io/assets/Resume.pdf) or [LinkedIn profile](https://www.linkedin.com/in/SatishAgrawal/).
 
 This page is meant to help you get to know **me** a little better:
 

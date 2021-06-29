@@ -14,7 +14,7 @@ header:
   teaser: "/assets/AirlineBackground.png"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/Satishhieken/AirlineSafetyDataViz"
+      url: "https://github.com/SatishAgrawal/AirlineSafetyDataViz"
 ---
 
 # Airline Safety Data Visualization
@@ -45,13 +45,13 @@ Additionally, I was required to use one supplemental dataset for my visualizatio
 	* Should follow the design aesthetic of the blog post
 
 ## Results
-[**Blog Post**](https://Satishhieken.github.io/assets/AirlineSafetyBlogPost.pdf)
+[**Blog Post**](https://SatishAgrawal.github.io/assets/AirlineSafetyBlogPost.pdf)
 
-[**Infographic**](https://Satishhieken.github.io/assets/AirlineSafetyInfographic.pdf)
+[**Infographic**](https://SatishAgrawal.github.io/assets/AirlineSafetyInfographic.pdf)
 	
 ## Author
 
-**Satish Hieken**
+**Satish Agrawal**
 
 
 ## Acknowledgments

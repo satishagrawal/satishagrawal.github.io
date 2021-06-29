@@ -15,14 +15,14 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Satish Hieken's Data Science Portfolio"
+title                    : "Satish Agrawal's Data Science Portfolio"
 title_separator          : "-"
 subtitle                 : "Portfolio Home"
-name                     : "Satish Hieken"
+name                     : "Satish Agrawal"
 description              : "A Great Big Beautiful Tomorrow"
-url                      : "https://Satishhieken.github.io/"
+url                      : "https://SatishAgrawal.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "Satishhieken/Satishhieken.github.io"
+repository               : "SatishAgrawal/SatishAgrawal.github.io"
 teaser                   : "assets/Tags.jpg"
 logo                     : "assets/TinyIcon.png"
 masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
@@ -92,31 +92,31 @@ analytics:
 
 # Site Author
 author:
-  name             : "Satish Hieken"
+  name             : "Satish Agrawal"
   avatar           : "assets/AvatarPicture.jpeg"
   bio              : "Data Scientist"
   location         : "Orlando, Florida"
-  email            : "Satishhieken@gmail.com"
+  email            : "SatishAgrawal@gmail.com"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/in/Satishhieken/
+      url: https://www.linkedin.com/in/SatishAgrawal/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Satishhieken"
+      url: "https://github.com/SatishAgrawal"
 
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/in/Satishhieken/
+      url: https://www.linkedin.com/in/SatishAgrawal/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Satishhieken"
+      url: "https://github.com/SatishAgrawal"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:Satishhieken@gmail.com
+      url: mailto:SatishAgrawal@gmail.com
 
 
 

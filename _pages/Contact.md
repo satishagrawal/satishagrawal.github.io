@@ -19,13 +19,13 @@ header:
   </li>
   <li>
     <div class="text">
-      <div class="name"><a href="https://www.linkedin.com/in/Satishhieken/" rel="nofollow">LinkedIn</a></div>
+      <div class="name"><a href="https://www.linkedin.com/in/SatishAgrawal/" rel="nofollow">LinkedIn</a></div>
       <div class="description">Connect with me and see what else I've been up to</div>
     </div>
   </li>
   <li>
     <div class="text">
-      <div class="name"><a href="mailto:Satishhieken@gmail.com" rel="nofollow">Email</a></div>
+      <div class="name"><a href="mailto:SatishAgrawal@gmail.com" rel="nofollow">Email</a></div>
       <div class="description">I usually respond immediately</div>
     </div>
   </li>

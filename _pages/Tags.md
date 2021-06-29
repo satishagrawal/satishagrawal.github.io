@@ -9,6 +9,6 @@ header:
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
   actions:
     - label: "My GitHub Profile"
-      url: "https://github.com/Satishhieken/"
+      url: "https://github.com/SatishAgrawal/"
 author_profile: true
 ---
