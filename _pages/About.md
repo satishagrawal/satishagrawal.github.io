@@ -14,7 +14,7 @@ header:
 
 This page is meant to help you get to know **me** a little better:
 
-* My full first name is AleSatish, but I prefer to go by
+* My full first name is Satish, but I prefer to go by
 * I'm originally from St. Louis, Missouri
 * I'm the oldest of six kids (3 boys and 3 girls)
 * I have two cats (Jinx and Whiskey)

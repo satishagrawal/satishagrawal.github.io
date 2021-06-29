@@ -20,9 +20,9 @@ title_separator          : "-"
 subtitle                 : "Home"
 name                     : "Satish Agrawal"
 description              : "A Great Big Beautiful Tomorrow"
-url                      : "https://SatishAgrawal.github.io/"
+url                      : "https://satishagrawal.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "SatishAgrawal/SatishAgrawal.github.io"
+repository               : "satishagrawal/satishagrawal.github.io"
 teaser                   : "assets/Tags.jpg"
 logo                     : "assets/TinyIcon.png"
 masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
@@ -94,13 +94,13 @@ analytics:
 author:
   name             : "Satish Agrawal"
   avatar           : "assets/AvatarPicture.jpeg"
-  bio              : "Data Scientist"
+  bio              : "Enterprise Architect"
   location         : "Omaha, Nebraska"
   email            : "satish.agrawal82@gmail.com"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/in/satishagrawal/
+      url: https://www.linkedin.com/in/satishagrawal82/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/satishagrawal"
@@ -110,7 +110,7 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/in/satishagrawal/
+      url: https://www.linkedin.com/in/satishagrawal82/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/satishagrawal"
