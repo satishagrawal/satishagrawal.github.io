@@ -2,7 +2,7 @@
 title: "Contact"
 permalink: /contact/
 header:
-  overlay_image: "/assets/Contact.jpg"
+  overlay_image: "/assets/background.jpg"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
   actions:
     - label: "Send me an email"
