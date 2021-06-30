@@ -25,7 +25,7 @@ header:
   </li>
   <li>
     <div class="text">
-      <div class="name"><a href="mailto:SatishAgrawal@gmail.com" rel="nofollow">Email</a></div>
+      <div class="name"><a href="mailto:satish.agrawal82@gmail.com" rel="nofollow">Email</a></div>
       <div class="description">I usually respond immediately</div>
     </div>
   </li>
