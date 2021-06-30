@@ -1,6 +1,6 @@
 ---
-title: "PUBG Behavioral Analysis"
-date: 2020-04-05
+title: "House Price Prediction Model"
+date: 2021-06-01
 tags:
  - Python
  - Jupyter Notebook
@@ -9,14 +9,14 @@ tags:
  - Spark
  - Behavioral Analysis
  - Data Warehousing
-excerpt: "Identifying Areas to Improve Player Engagement"
+excerpt: "Predict a fair market price for a house"
 header:
   overlay_image: "/assets/PUBGBackground.jpg"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
   teaser: "/assets/PUBGBackground.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/SatishAgrawal/PUBG_BehavioralAnalysis"
+      url: "https://github.com/satishagrawal/DataScience/tree/main/House%20Price%20Prediction%20-%20Not%20started"
 ---
 # PlayerUnknown’s Battlegrounds Behavioral Analysis
 **This analysis takes game and death data from over 720,000 games of PUBG to learn more about player behavior and help make recommendations to increase their engagement with the game.**
@@ -24,7 +24,7 @@ header:
 ## The Data
 This project uses the [PUBG Match Deaths and Statistics Dataset](https://www.kaggle.com/skihikingkevin/pubg-match-deaths) from Kaggle.
 
-The dataset is comprised of player statistics from over 720,000 competitive matches, which is separated into two different collections- **Death Statistics** and **Aggregate Match Statistics**. 
+The dataset is comprised of player statistics from over 720,000 competitive matches, which is separated into two different collections- **Death Statistics** and **Aggregate Match Statistics**.
 
 Those collections are each split into five CSV files that are approximately 2 GB each, so I will not be including the data in the GitHub repository. Everything can still be downloaded from the link above, and the code will show you how to use PySpark to reduce the necessary disk space from over 20 GB to just under 6 GB to more comfortably fit everything into memory to work with.
 
