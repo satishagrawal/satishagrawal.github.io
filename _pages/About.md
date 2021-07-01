@@ -10,14 +10,9 @@ header:
 ---
 
 ## Thanks for checking out my portfolio!
->If you were looking for a more formal list of skills and work experience, you can find all that information on my [resume](https://SatishAgrawal.github.io/assets/Resume.pdf) or [LinkedIn profile](https://www.linkedin.com/in/SatishAgrawal/).
+>If you were looking for a more formal list of skills and work experience, you can find all that information on my [resume](https://SatishAgrawal.github.io/assets/Resume.pdf) or [LinkedIn profile](https://www.linkedin.com/in/satishagrawal82/).
 
-This page is meant to help you get to know **me** a little better:
 
-* My full first name is Satish, but I prefer to go by
-* I'm originally from St. Louis, Missouri
-* I'm the oldest of six kids (3 boys and 3 girls)
-* I have two cats (Jinx and Whiskey)
-* I'm an avid St. Louis Blues (hockey) fan
-* I met my wife during an internship at Disney World in 2008
-* According to [16 Personalities](https://www.16personalities.com/), my personality type is INTP
+#### Enterprise Architect (TOGAF 9 Certified) with a demonstrated fifteen-year history of delivering innovative and impactful solutions. Skilled in building enterprise-grade architectural solutions utilizing subspecialties in cloud technologies, streaming analytics, microservices, and event-driven architectures.
+
+#### As a trusted advisor and confidante to leadership (at all levels), organizational partners, peers, and staff I have helped lead numerous initiatives finding hidden opportunities and innovative solutions along the way.   Success has come through a combination of coaching and mentoring individuals and teams, collaborating with customers, and working to clearly define a shared understanding of how to marry business outcomes with strong solutions.   

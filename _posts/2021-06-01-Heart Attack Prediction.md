@@ -1,56 +1,25 @@
 ---
-title: "Spark Aggregations"
-date: 2019-11-03
+title: "Heart Attack Prediction Model"
+date: 2021-06-01
 tags:
  - Python
  - Jupyter Notebook
- - PySpark
-excerpt: "How to Join Datasets and Perform Aggregations with Spark"
+excerpt: "Train a prediction model to predict the risk of heart attack"
 header:
   overlay_image: "/assets/SparkAggBackground.png"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
   teaser: "/assets/SparkAggBackground.png"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/SatishAgrawal/SparkAggregations"
+      url: "https://github.com/satishagrawal/DataScience/tree/main/Heart%20Attack%20Prediction"
 ---
 
-# Joining Datasets and Performing Aggregations with Spark
+# Train a prediction model to predict the risk of heart attack
 
-**This notebook shows how to join datasets in Spark and perform a variety of aggregations using Spark SQL by completing a series of common tasks.**
+**This notebook loads the data set, performs EDA, cleans the data up and trains a few models using exhaustive train techniques to predict if patient risk of heart attack.**
 
 ## The Data
-There are two data files that are used in this notebook (`flights.parquet` and `airport-codes.csv`), which can be found in the data folder of the GitHub repository.
-
-#### File Schema
-* **`flights.parquet`** *(3,606,803 total records)*
-	* origin_airport_code: string (nullable = true)
-	* destination_airport_code: string (nullable = true)
-	* origin_city: string (nullable = true)
-	* destination_city: string (nullable = true)
-	* passengers: long (nullable = true)
-	* seats: long (nullable = true)
-	* flights: long (nullable = true)
-	* distance: double (nullable = true)
-	* origin_population: long (nullable = true)
- 	* destination_population: long (nullable = true)
-	* flight_year: long (nullable = true)
-	* flight_month: long (nullable = true)
-	* \_\_index_level_0\_\_: long (nullable = true)
-
-* **`airport-codes.csv`** *(54,591 total records)*
-	* ident: string (nullable = true)
-	* type: string (nullable = true)
-	* name: string (nullable = true)
-	* elevation_ft: double (nullable = true)
-	* continent: string (nullable = true)
-	* iso_country: string (nullable = true)
-	* iso_region: string (nullable = true)
-	* municipality: string (nullable = true)
-	* gps_code: string (nullable = true)
-	* iata_code: string (nullable = true)
-	* local_code: string (nullable = true)
-	* coordinates: string (nullable = true)
+The data set has several observations of patients records and the outcome if patient had a heart attack. This data set is pulled from kaggle @ https://www.kaggle.com/kumudadk/heart-attack-prediction-and-analysis?select=heart.csv
 
 ## Tasks
 1. Load the data and print the schema
@@ -77,7 +46,7 @@ There are two data files that are used in this notebook (`flights.parquet` and `
 6. Repeat steps 2-4 for destinations:
 	* Join the data on destination airport instead of the origin airport
 	* Drop the same columns
-	* Rename the same columns using the prefix `destination_airport_` instead of `origin_airport_` 
+	* Rename the same columns using the prefix `destination_airport_` instead of `origin_airport_`
 	* Print the schema
 
 7. Create a dataframe using only data from 2008. This dataframe will be a report of the top ten airports by the number of inbound passengers. This dataframe should contain the following fields:
@@ -87,7 +56,7 @@ There are two data files that are used in this notebook (`flights.parquet` and `
 	-   Total Inbound Passengers
 	-   Total Inbound Flights
 	-   Average Daily Passengers
-	-   Average Inbound Flights 
+	-   Average Inbound Flights
 
 8. Create a user-defined function in Python that will convert the string coordinates into numeric coordinates
 
@@ -95,11 +64,10 @@ There are two data files that are used in this notebook (`flights.parquet` and `
 	*  destination_airport_longitude
 	* destination_airport_latitude
 	* origin_airport_longitude
-	* origin_airport_latitude 
+	* origin_airport_latitude
 		* Then, print the schema
 
 ### Rather than providing all of the schema printouts here, they can all be found in the [notebook](https://github.com/SatishAgrawal/SparkAggregations/blob/master/Spark%20Aggregations.ipynb) located in the GitHub repository for this project.
 
 ## Author
 **Satish Agrawal**
-
