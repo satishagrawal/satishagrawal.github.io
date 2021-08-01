@@ -27,15 +27,13 @@ All other 80 variables are explanatory variables that help determine the sales p
 
 2.	Garage information: There are at least seven attributes about the condition of garage(s) in the house. Garage also play a vital role in the house price. For example, house with three car garages is going to be more expensive than two or one car garage.
 
-3.	Lot information: There are a few attributes that have the information around the lot for example, lot size, lot shape, lot frontage etc. Lot details is one of the many important attributes that determine the house price. 
+3.	Lot information: There are a few attributes that have the information around the lot for example, lot size, lot shape, lot frontage etc. Lot details is one of the many important attributes that determine the house price.
 
 4.	Year built: This is when the house construction was finished. Older house may have older appliances and may have other issues. Year build is a key to help determine the house price.
 
 5.	There are quite a few important attributes that impact the final price of the house for example, number of bathrooms (full bath versus half bathrooms), size of the living room, heating mechanism, cooling mechanism, electrical, number of fireplaces, number of fans in the house etc. This data set has many of these attributes included and will be useful in determining the final price.
 
 The data set at hand has a lot of variables that I assume are going to be strongly correlated with the final house price. Initial analysis has revealed that only a few columns has missing data and quality of data is acceptable.
-
-![PUBG Data](https://SatishAgrawal.github.io/assets/PUBGdata.png)
 
 ## Author
 **Satish Agrawal**
