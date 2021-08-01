@@ -19,7 +19,7 @@ title                    : "Satish Agrawal"
 title_separator          : "-"
 subtitle                 : "Home"
 name                     : "Satish Agrawal"
-description              : "A Great Big Beautiful Tomorrow"
+description              : "Enterprise Architecture"
 url                      : "https://satishagrawal.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "satishagrawal/satishagrawal.github.io"
@@ -94,7 +94,7 @@ analytics:
 author:
   name             : "Satish Agrawal"
   avatar           : "assets/AvatarPicture.jpeg"
-  bio              : "Enterprise Architect | Data Scientist"
+  bio              : "Enterprise Architecture | Data Science"
   location         : "Omaha, Nebraska"
   email            : "satish.agrawal82@gmail.com"
   links:
