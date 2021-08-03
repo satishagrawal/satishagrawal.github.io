@@ -6,9 +6,9 @@ tags:
  - Jupyter Notebook
 excerpt: "Train a prediction model to predict the risk of heart attack"
 header:
-  overlay_image: "/assets/heartattack.png"
+  overlay_image: "/assets/heartattack.jpg"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
-  teaser: "/assets/heartattack.png"
+  teaser: "/assets/heartattack.jpg"
   actions:
     - label: "Go to GitHub Repository"
       url: "https://github.com/satishagrawal/DataScience/tree/main/Heart%20Attack%20Prediction"
