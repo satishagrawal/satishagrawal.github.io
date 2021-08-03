@@ -1,94 +1,37 @@
 ---
-title: "Predicting NHL Contracts"
-date: 2020-02-29
+title: "Data cleaning and preparation for used car sales data"
+date: 2020-09-30
 tags:
  - Python
- - R
  - Jupyter Notebook
-excerpt: "Using Hockey Statistics and Economic Data to Predict Player Values"
+excerpt: "Demonstrate the steps in data cleaning and data preparation using used car sales dataset"
 header:
-  overlay_image: "/assets/HockeyEconomyBackground.png"
+  overlay_image: "/assets/datacleaning.jpg"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
-  teaser: "/assets/HockeyEconomyBackground.png"
+  teaser: "/assets/datacleaning.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/SatishAgrawal/HockeyEconomy"
+      url: "https://github.com/satishagrawal/DataScience/tree/main/Used%20Car%20Sales%20Data%20Preparation"
 ---
 
-# Predictive Analytics for NHL Contracts
+# Data cleaning and preparation
 **This study combines NHL player statistics, player contract information, and economic data to predict a player’s value- locally adjusted for a specific team**
 
 ## Introduction
-There comes a point in *every* season of *every* professional sport where teams, analysts, and fans are forced to speculate on contract signings and roster moves. With more data being published every day, I wanted to compare the performance of complex Neural Networks to Linear  and Multiple Linear Regression for predicting a player's value as a percentage of the NHL's current salary cap. There is nothing novel about simply attempting to predict player contracts, so I decided to add economic data for every city that hosts an NHL team in an attempt to adjust a player's salary based on actual take-home pay. I believe that this can add an additional layer of insight because from a player's perspective, it doesn't matter if you sign a contract for more money in a different city if you'll be taking less of that money home after taxes and a higher cost of living.
+For this project I chose used cars datasets from variety of sources including a flat file like CSV, a webpage in tabular format and an API which can be accessed via restful GET endpoints. Below are the three data sources with description of data in there:
 
-## The Data
-In the data folder of the GitHub repository, you will find four CSV files:
+1.	A CSV file: This CSV file is downloaded from Kaggle [1]. It contains Car’s data, scraped from AUCTION EXPORT.com. This dataset included Information about 28 brands of clean and used vehicles for sale in US. There are twelve features assembled for each car in this dataset. This data set includes basic car attributes like brand, model, year, color, the sale price for the car, vin (vehicle identification number) and mileage. It also includes other information like, state and city of the car location, title status, the lot number and condition.
 
-* `SkaterStats.csv`
-	* Contains basic statistics from [NHL.com/stats](http://www.nhl.com/stats/skaters?aggregate=0&reportType=season&seasonFrom=20092010&seasonTo=20182019&gameType=2&status=active&filter=gamesPlayed,gte,0&sort=a_skaterFullName&page=0&pageSize=100) for all active players
+2.	A web page: The second source of cars data is from true car website where it has all the cars listed for sale [2]. This web site provides a variety of filters to pinpoint to small number of listed cars to limit the result set. This site provides multiple car attributes like interior color, exterior color, make model, year, mileage and many other attributes that define the car and its condition.
 
-* `CapFriendly.csv`
-	* Contains contract and salary cap data from [CapFriendly.com](https://www.capfriendly.com/browse/active/2020/signing-date/all/all/all/asc&display=birthday,country,slide-candidate,waivers-exempt,signing-status,expiry-year,performance-bonus,signing-bonus,caphit-percent,aav,length,minors-salary,base-salary,arbitration-eligible,type,signing-age,signing-date,arbitration,extension) for all active players
+3.	An API: The third source of data is a marketplace for API which provides information related to cars [3]. This API gateway site has many different APIs that provide data like inventory of cars, VIN history, Dealer info API, and other market statistics related data APIs. For this project I am concentrating on the statistics API which provides popular cars by city state pair. I have subscribed to the API for a trial to review the data and see any possible connections with other two data sources. This API provides the max and min price of the popular cars, with mean, variance and standard deviation. It also mileage statistics like min, max, median and variance. Other basic info like make and model are also provided.
 
-* `Taxes.csv`
-	* Contains tax and cost of living data for each city that is home to an NHL team
-
->**The above files are imported into RStudio to clean and prepare the data.**
->* The R Markdown file can be found in the GitHub repository for the project if you want to see the steps taken to clean and combine the data
->
->* If you would rather skip to the analysis, I have also included the processed data file that gets exported from RStudio
-
-* `CleanHockeyData.csv`
-	* Contains the combined, processed, and exported data from RStudio that is used for analysis in Python
-
-## The Process
-**Data Preparation**
-* I reduced the data down to a single record for each individual player for the season they signed their current contract.
-
-	* Each record needed to include the player's statistics for that season plus the season prior to signing because this allows us to see how their performance might have changed from season to season
-	
-* Then, I used the raw hockey statistics to create **per game**, **per minute**, and **per 60 minutes** versions of each of the original statistics to try to control for things like ice time and injuries, which are out of the players' control.
-
-	* I wound up sticking with just the **per 60 minutes** statistics for the analysis because it generated better predictions than the raw statistics, and the results were easier to interpret than breaking things down to a *per minute* basis.
-	
-* The data was further reduced to only include players with a minimum of 25 games played because a good handful of the players had a few really good games before getting injured or reassigned to a different league, which skews their *per 60 minute* rates for the season.
-
-**Analysis**
-* The neural network was built with Keras and uses all of the features in the dataset:
-
-![Neural Network](https://SatishAgrawal.github.io/assets/NeuralNetwork.png)
-
->Next, I had to test the correlation of all the features to figure out which one(s) have the highest correlation with the target (Percentage of Cap Space), so I could use those features for regression.
-
-* Simple linear regression used **Assists Per 60 Minutes** since it had the highest correlation with the target.
-
-* Multiple linear regression used **Assists Per 60 Minutes** plus the next six features that had the highest correlation with the target
-
-## Results
-**Surprisingly, multiple linear regression wound up narrowly outperforming the neural network in terms of prediction accuracy. However, none of the models appear to be effective enough to make reliable player valuations.**
-
-```
-Target Variable = pctCap
-mean(pctCap) = 0.0552
-
-Multiple Linear Regression = 0.014824140704958222
-Neural Network = 0.019025536688456527
-Simple Linear Regression = 0.023563290128380265
-```
-
-![NN Predicted vs Actual](https://SatishAgrawal.github.io/assets/NNPlot.png)
+### Refer to the notebook for data cleaning and preparation steps
 
 ## Author
 **Satish Agrawal**
 
-## Acknowledgements
-The hockey analytics Twitter community is extremely helpful and supportive of anyone looking to learn more about hockey, statistics, or sports analytics in-general.
-
-I want to be sure to specifically thank the following accounts that provided data and inspiration for this project. It wouldn't have been possible without:
-* Evolving-Hockey: [@EvolvingHockey](https://twitter.com/EvolvingHockey) on Twitter and [Evolving-Hockey.com](https://evolving-hockey.com/)
-
-* Hockey-Graphs: [@HockeyGraphs](https://twitter.com/HockeyGraphs) on Twitter and [Hockey-Graphs.com](https://hockey-graphs.com/)
-
-* CapFriendly: [@CapFriendly](https://twitter.com/CapFriendly) on Twitter and [CapFriendly.com](https://www.capfriendly.com/)
-
-
+## References:
+[1] https://www.kaggle.com/doaaalsenani/usa-cers-dataset
+[2] https://www.truecar.com/used-cars-for-sale/listings/
+[3] https://apidocs.marketcheck.com/?version=latest#5be79d1e-2756-4cae-845f-8dc28fbf8a3c
