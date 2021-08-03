@@ -1,29 +1,24 @@
 ---
-title: "Optimizing A Baseball Marketing Promotion"
-date: 2019-12-15
+title: "Sentiment analysis using NLP"
+date: 2020-05-01
 tags:
  - Python
  - Jupyter Notebook
-excerpt: "Using Marketing Promotion Data to Identify Optimal Promotional Strategies"
+ - NLP
+ - Natural Language Processing
+
+excerpt: "Using NLP to detect the sentiment of a user based on the comments they made"
 header:
-  overlay_image: "/assets/BaseballPromoBackground.jpg"
+  overlay_image: "/assets/sentiment.jpg"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
-  teaser: "/assets/BaseballPromoBackground.jpg"
+  teaser: "/assets/sentiment.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/SatishAgrawal/BaseballPromo"
+      url: "https://github.com/satishagrawal/DataScience/tree/main/NLP%20-%20Sentiment%20Analysis"
 ---
 
-# Using Data to Improve a Marketing Promotion for the LA Dodgers
+# Using Natural language processing to determine the sentiment of the user based on the Text
 ***
-For this project, I was asked to evaluate data from the 2012 season to help select a promotion with the highest potential to increase attendance.
-
-### Project Guidelines
-1. You must use both Python and R in some capacity
-2. You must demonstrate the use of Box Plots, Scatter Plots, and a Regression Model
-
-## The Data
-In the data folder of the GitHub repository, you will see `dodgers.csv`, which contains a variety of information from the Dodgers' 2012 season.
 
 ## Author
 **Satish Agrawal**
