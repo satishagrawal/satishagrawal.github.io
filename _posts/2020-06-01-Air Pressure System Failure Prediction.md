@@ -1,74 +1,41 @@
 ---
-title: "Hockey Hall of Fame Predictions"
-date: 2019-11-03
+title: "APS failure in Trucks"
+date: 2020-06-01
 tags:
  - Python
- - R
  - Jupyter Notebook
-excerpt: "Using Career Statistics for NHL Players to Predict Future Inductees to the Hockey Hall of Fame"
+
+excerpt: "Prediction Model for Air pressure systems failure in Trucks"
 header:
-  overlay_image: "/assets/HOFBackground.jpg"
+  overlay_image: "/assets/truckfailure.jpg"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
-  teaser: "/assets/HOFBackground.jpg"
+  teaser: "/assets/truckfailure.jpg"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/SatishAgrawal/HockeyHOFPredictions"
+      url: "https://github.com/satishagrawal/DataScience/tree/main/Air%20Pressure%20System%20Failure%20Predction"
 ---
 
-# Exploratory Data Analysis and Predictive Modeling for the Hockey Hall of Fame
+# Classification model to predict the Air pressure system failure in Trucks to save on maintenance/breakdown cost
 
-**This study visually explores career NHL statistics before building a model to predict which players will get into the Hockey Hall of Fame.**
+**This project trains a classification model to predict if truck APS needs to be checked to avoid any future breakdowns**
 
-## The Data
-I used the `NHL.csv` file that is located in the data folder of the GitHub repository for this study.
+## Overview
 
-The dataset contains cumulative statistics for the careers of 1914 players in the NHL.
+In the trucking industry, maintenance, breakdown, and safety are a few of the major concerns. There are preventive, routine maintenance to confirm the current state of equipment in the truck and avoid any breakdowns. And there are expenses after the breakdown (due to a missed routine maintenance) to get the truck back on the road. Unnecessary preventive checks cost money and add burden to the company, and on the other hand, a missed maintenance may cause a breakdown and cost the company even more. There is a need to predict the maintenance timeline to minimize both types of expenses. This project aims at developing the best possible model to predict the need for preventive care and avoid the breakdown while keeping the maintenance cost as low as possible.
 
-## The Process
-I start this project by importing the data and creating histograms, bar charts, and scatterplots for the different features to help visually explore the data.
+## Approach and Modelling Methodology
 
-In order to better compare the distribution of each feature for Hall-of-Famers vs Non Hall-of-Famers, I generated a parallel coordinates plot that shows pretty significant stratification:
+Dataset available comes in two files one for a train set and another for a test set. The dataset was released by Scania CV AB [1] on the UCI Machine Learning Repository [2]. The target is to predict the failure of the Scania Air Pressure System (APS) in trucks to enable preventive maintenance and thereby reduce the maintenance costs. The dataset is anonymized due to proprietary reasons and should not be a problem for the usage of this project.
+ The target variable in the dataset is a class that can take the values of either positive or negative. The positive value indicates that the maintenance was due to the APS failure and a negative value indicates that the maintenance was due to some other non-APS failure. It would have been ideal if explanatory variables are independent identically distributed which is not the case for the dataset at hand. There are some correlations found between the explanatory variables but it not strong and does not impact the project. Dataset had a lot of missing values and imputation techniques were used to impute missing values using the most frequent value.
+ Also, it was found that many of the attributes have strong correlations with the target variable. The data set has 171 attributes which were cleaned down to 161 attributes, removing attributes with excessive missing values and then reduced to 108 attributes using Principle Component Analysis (PCA). PCA graph shows that 95% of the cumulative variance is explained by only 75 components and 97% of the cumulative variance is explained by 85 components. I ran PCA for 99% of the variance and successfully reduced the components down to 108.
+For the evaluation of the model, we have come up with a metric to come up with a cost equation. Negative class maintenance was assigned $10 and a positive class maintenance event is assigned $500. In other words, broken equipment costs much more to fix (or replace) and then get the truck back to operating mode as opposed to routine maintenance to avoid the breakdown. However, too many preventive maintenances also cost money and need to be minimized. The dollar amount here merely depicts the ratio of expenditure which is 1:50 for negative versus positive cases.
 
-![Parallel Coordinates](https://SatishAgrawal.github.io/assets/ParallelCoord.png)
-
-This let me know that Hall-of-Famers are actually (mostly) statistically different from their peers, which means I should be able to make some fairly accurate predictions using this data.
-
-After checking distributions and correlations of the data, I reduced the dataset to only include players with a minimum of 500 career games played, which removed a lot of the clutter. The number of total records reduced from 1914 to 764 after this adjustment, so I created the following scatterplots to see how things looked now.
-
->These scatterplots show the relationship between games played and six statistics that are highly correlated to Hall of Fame induction.
->
->The size of each datapoint is based on that player's career plus/minus (bigger is better)
->
->Players that are already in the Hall of Fame appear much darker in color
-
-![Scatterplots](https://SatishAgrawal.github.io/assets/HHOFScatterplots.jpg)
-
-At this point, I knew that I would be using logistic regression to make binary predictions, so I split the data into training and testing sets.
-
->* Total Records: 764
->
->	* Training: 611
->
->		* 568 Out
->
->		* 43 In
->
->	* Testing: 153
->
->		* 136 Out
->
->		* 17 In
 
 ## Results
-As it turns out, there is a reason those players made it into the Hall of Fame- they've separated themselves from the rest of the pack, both statistically and metaphorically.
 
-Aside from three false negative predictions, the other 150 records in the test data were correctly classified:
-
-![Classification Report](https://SatishAgrawal.github.io/assets/HHOFCR.png)
-
-Since the overwhelming majority of the data is for players that aren't currently in the Hall of Fame, and I would prefer a balance of precision and recall, **F1** is going to be the best metric to use. 
-
-At the end of the day, there really aren't that many players that have ever made it into the Hockey Hall of Fame. After exploring the data, it's a lot more obvious that the players who are in the Hall of Fame usually make a very strong case for themselves by continuing to play at a high level for many years. The minimum of 500 career games that I used for this project is the equivalent of playing just over six full NHL seasons without missing a single game, and it's even more common to see a Hall-of-Famer play over 1,000 games before hanging up their skates!
+While this project concludes that the Random forest classifier gets the minimal cost, there could be future enhancements to the model to minimize the total cost. Random forest works well because it is simply a collection of decision trees whose results are aggregated into one final result. Random Forests has the ability to limit overfitting without substantially increasing error due to bias. One way Random Forests reduce variance is by training on different samples of the data. We can try CatBoost classifiers to see how it performs in terms of getting the least cost.
+A good next step could be to work with adjusting the probability threshold of the fitted model. Looking closely at the cost equation, reducing the false-negative even slightly will reduce the cost by big amounts. The best probability threshold is decided by using cross-validation which gives the least cost. In this process, we will end up finding the optimal values for FN and FP.
+The dataset is highly imbalanced, and it has the majority of the observations for negative and very few of the positive outcomes. It would be beneficial to do some class balancing by down sampling the negative class and/or oversampling the positive class. This means one possible next step would be to use the smote technique for class balancing.
 
 ## Author
 **Satish Agrawal**
