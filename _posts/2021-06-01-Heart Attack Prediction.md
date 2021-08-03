@@ -8,7 +8,7 @@ excerpt: "Train a prediction model to predict the risk of heart attack"
 header:
   overlay_image: "/assets/SparkAggBackground.png"
   overlay_filter: 0.3 # same as adding an opacity of 0.3 to a black background
-  teaser: "/assets/SparkAggBackground.png"
+  teaser: "/assets/heartattack.png"
   actions:
     - label: "Go to GitHub Repository"
       url: "https://github.com/satishagrawal/DataScience/tree/main/Heart%20Attack%20Prediction"
@@ -21,53 +21,17 @@ header:
 ## The Data
 The data set has several observations of patients records and the outcome if patient had a heart attack. This data set is pulled from kaggle @ https://www.kaggle.com/kumudadk/heart-attack-prediction-and-analysis?select=heart.csv
 
-## Tasks
-1. Load the data and print the schema
+## Method
+I chose a data set from Kaggle @ https://www.kaggle.com/kumudadk/heart-attack-prediction-and-analysis?select=heart.csv. This is a small dataset with under 500 observations and fourteen different attributes showing health condition of patients and the outcome if patient had an attack. I trained a supervised learning model; the target variable is the “output” variable which indicates if patient had an attack or not. I used regression algorithms to train a predictive model. I first split the data into the training set and test set to avoid test data getting used in imputation and training. I dropped a few columns from the start before starting any analysis considering those were not correlated as much (or at all) to contribute to the output. And then here onwards I started working on train set only which contains the 80% of the available observations. The first step I took was to observe each and every attribute in the set. As part of data cleansing process, I looked at the distribution of the variables. Some of the variables indicated the outliers and missing values which I handled as many of the machine learning algorithms do not handle missing values. Diagram above shows the distribution of age in the data set. Age plays an important role in determining if patient is prone to the disease. The distribution of the age data looks close to normal and do not require any preprocessing. Similarly, below diagram shows the count plot of chest pain types. There are four categories in the set for chest pain. Chest pain is already encoded in the scale of 0-3 which means:
 
-3. Join the flight data to airport codes data by matching the IATA code of the originating flight to the IATA code in the airport codes file, then print the schema
+0 = Typical Angina,
+1 = Atypical Angina,
+2 = Non-anginal Pain,
+3 = Asymptomatic
 
-4. Remove the following columns from the joined DataFrame:
-	-   \_\_index_level_0\_\_
-	-   ident
-	-   local_code
-	-   continent
-	-   iso_country
-	-   iata_code
+I did similar analysis on all of the other attributes in the dataset and did transformations as needed. Next, I generated a correlation matrix of all the attributes which indicated a strong correlation of output with the chest pain, slope and maximum heart rate achieved.
+Once I had the processed data set at hand, I started training regression models. I trained KNeighborsClassifier, LogisticRegression, DecisionTreeClassifier and SVC models. I used GridSearchCV to do exhaustive training and hyperparameter tuning. I used k fold stratified cross validation to make sure every split had the same proportion of true and false output values and equal representation of both output classes. I ended of 70 different models and compared those against each other’s using accuracy score as the comparison metric. I decided to use R-square as a scoring metric. The most common interpretation of r-squared is how well the regression model fits the observed data.
 
-5. Rename the following columns:
-	-   type: origin_airport_type
-	-   name: origin_airport_name
-	-   elevation_ft: origin_airport_elevation_ft
-	-   iso_region: origin_airport_region
-	-   municipality: origin_airport_municipality
-	-   gps_code: origin_airport_gps_code
-	-   coordinates: origin_airport_coordinates
-
-6. Repeat steps 2-4 for destinations:
-	* Join the data on destination airport instead of the origin airport
-	* Drop the same columns
-	* Rename the same columns using the prefix `destination_airport_` instead of `origin_airport_`
-	* Print the schema
-
-7. Create a dataframe using only data from 2008. This dataframe will be a report of the top ten airports by the number of inbound passengers. This dataframe should contain the following fields:
-	-   Rank (1-10)
-	-   Name
-	-   IATA code
-	-   Total Inbound Passengers
-	-   Total Inbound Flights
-	-   Average Daily Passengers
-	-   Average Inbound Flights
-
-8. Create a user-defined function in Python that will convert the string coordinates into numeric coordinates
-
-9. Add new columns for:
-	*  destination_airport_longitude
-	* destination_airport_latitude
-	* origin_airport_longitude
-	* origin_airport_latitude
-		* Then, print the schema
-
-### Rather than providing all of the schema printouts here, they can all be found in the [notebook](https://github.com/SatishAgrawal/SparkAggregations/blob/master/Spark%20Aggregations.ipynb) located in the GitHub repository for this project.
 
 ## Author
 **Satish Agrawal**
