@@ -1,6 +1,6 @@
 ---
 title: "Airline Safety Data Visualization"
-date: 2020-01-19
+date: 2021-03-01
 tags:
  - Python
  - R
@@ -14,12 +14,12 @@ header:
   teaser: "/assets/AirlineBackground.png"
   actions:
     - label: "Go to GitHub Repository"
-      url: "https://github.com/SatishAgrawal/AirlineSafetyDataViz"
+      url: "https://github.com/satishagrawal/DataScience/tree/main/Airline%20Safety%20-%20Storytelling"
 ---
 
 # Airline Safety Data Visualization
 
-For this project, I was given a scenario based on a 2014 article by [Nate Silver](https://fivethirtyeight.com/contributors/nate-silver/) about the media's unfair portrayal of airline safety after Malaysia Airlines Flight 17 was downed in Ukraine. 
+For this project, I was given a scenario based on a 2014 article by [Nate Silver](https://fivethirtyeight.com/contributors/nate-silver/) about the media's unfair portrayal of airline safety after Malaysia Airlines Flight 17 was downed in Ukraine.
 
 ## The Scenario
 Due to recent unfortunate airline crashes, the media has been promoting statistics stating air is no longer a safe way to travel. The news and media outlets have been bombarding the public with reports and figures about the trends of airline safety and that things are not looking good. What was previously thought as the safest way to travel, especially when compared to automobiles, is now being presented as one of the most dangerous to the public. But are any of these claims based on facts?
@@ -38,17 +38,17 @@ Additionally, I was required to use one supplemental dataset for my visualizatio
 
 2. Create a blog post that an airline could use to spread through online news sources, social media, etc.
 	* Must use at least two graphics created from the data
-	* The blog post should be a minimum of 500 words 
+	* The blog post should be a minimum of 500 words
 
 3. Create an infographic that can be shared in print, like in airports, as well as social media
 	* Must use at least six graphics created from the data
 	* Should follow the design aesthetic of the blog post
 
 ## Results
-[**Blog Post**](https://SatishAgrawal.github.io/assets/AirlineSafetyBlogPost.pdf)
+[**Blog Post**](https://github.com/satishagrawal/DataScience/blob/main/Airline%20Safety%20-%20Storytelling/SatishAgrawal_BlogPost.pdf)
 
-[**Infographic**](https://SatishAgrawal.github.io/assets/AirlineSafetyInfographic.pdf)
-	
+[**Infographic**](https://github.com/satishagrawal/DataScience/blob/main/Airline%20Safety%20-%20Storytelling/Airline%20Travel%20Safety%20Infographics.pdf)
+
 ## Author
 
 **Satish Agrawal**
